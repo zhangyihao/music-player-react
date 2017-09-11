@@ -12,6 +12,7 @@ let Progress = React.createClass({
 		let progressbar = this.refs.progressbar;
 		//console.log(e.clientX+'-'+progressbar.getBoundingClientRect().left+"-"+progressbar.clientWidth);
 		let progress = (e.clientX - progressbar.getBoundingClientRect().left)/ progressbar.clientWidth;
+		console.log(progress);
 		this.props.onProgressChange && this.props.onProgressChange(progress);
 	},
 
